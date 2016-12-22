@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="box">
+      <div ng-hide="Login.ShowResetPass" class="row page-top"><h1>Login</h1></div>
+      <div ng-show="Login.ShowResetPass" class="row page-top"><h1>Reset Password</h1></div>
+      <form name="Login.LoginForm" ng-submit="Login.Login()" novalidate>
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input id="Email" type="email" name="email" class="form-control" ng-model="Login.Email" required ng-minlength="7" />
+                <div class="messages" ng-show="!Login.LoginForm.email.$valid && !Login.LoginForm.email.$pristine">Must be a valid email.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row" ng-hide="Login.ShowResetPass">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="lastname">Password</label>
+                <input type="password" name="password" class="form-control" ng-model="Login.Password" required ng-minlength="6" />
+                <div class="messages" ng-show="!Login.LoginForm.password.$valid && !Login.LoginForm.password.$pristine">Must be at least 8 characters.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Don't have an account, <a href="/#/register">click here</a> to sign up.</p>
+            </div>
+          </div>
+          <div class="row" ng-hide="Login.ShowResetPass">
+            <div class="col-md-12">
+              <p><a href="" ng-click="Login.ShowResetPassword()">Forgot your password?</a></p>
+            </div>  
+          </div>
+          <div class="row" ng-show="Login.ShowResetPass">
+            <div class="col-md-12">
+              <p>Enter your email address and we will email you a password reset link.</p>
+            </div>  
+          </div>
+        </div>
+        <div class="box-footer">
+          <div class="pull-left">
+            <button type="button" ng-click="Login.Cancel()" class="btn btn-default">Cancel</button>
+          </div>
+          <div ng-hide="Login.ShowResetPass" class="pull-right">
+            <button class="btn btn-primary" ng-disabled="Login.LoginForm.$invalid">Login</button>
+          </div>
+          <div ng-show="Login.ShowResetPass" class="pull-right">
+            <button class="btn btn-primary" ng-disabled="Login.LoginForm.email.$invalid">Reset Password</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

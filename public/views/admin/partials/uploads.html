@@ -1,0 +1,61 @@
+<div ng-controller="UploadsController as Uploads">
+	<div class="panel panel-default padded-panel" ng-show="Admin.Tab === 3">
+		<h4 class="admin-h4">Uploads</h4>
+		<form name="UploadsForm" ng-submit="Uploads.UploadProduct()">
+			<div class="row">
+				<div class="col-md-6">
+					<label class="control-label">Title</label>
+					<input type="text" class="form-control" ng-model="Uploads.Title" placeholder="Product Title" required />
+				</div>
+				<div class="col-md-3">
+					<label class="control-label">Category</label>
+					<select class="form-control" ng-options="c.Name as c.Name for c in Uploads.Categories" ng-model="Uploads.Category"></select>
+				</div>
+				<div class="col-md-3">
+					<label class="control-label">Default Size</label>
+					<select class="form-control" ng-options="s.Size as s.Size for s in Uploads.Sizes" ng-model="Uploads.DefaultSize"></select>
+				</div>
+			</div><br />
+			<div class="row">
+				<div class="col-md-4">
+					<label class="control-label">Large Image</label>
+					<input name="image1" fileread="Uploads.Image1" type="file" class="form-control" />
+				</div>
+				<div class="col-md-4">
+					<label class="control-label">Medium Image</label>
+					<input name="image2" fileread="Uploads.Image2" type="file" class="form-control" />
+				</div>
+				<div class="col-md-4">
+					<label class="control-label">Small Image</label>
+					<input name="image3" fileread="Uploads.Image3" type="file" class="form-control" />
+				</div>
+			</div><br />
+			<div class="row">
+				<div class="col-md-6">
+					<label class="control-label">Description</label>
+					<textarea class="form-control" rows="4" placeholder="Description..." ng-model="Uploads.Description" ng-minlength="50"></textarea>
+				</div>
+				<div class="col-md-2">
+					<label class="control-label">Sm Price</label>
+					<input type="text" name="size" class="form-control" ng-model="Uploads.SmallPrice" placeholder="$ Small" />
+				</div>
+				<div class="col-md-2">
+					<label class="control-label">Med Price</label>
+					<input type="text" name="size" class="form-control" ng-model="Uploads.MedPrice" placeholder="$ Med" />
+				</div>
+				<div class="col-md-2">
+					<label class="control-label">Lg Price</label>
+					<input type="text" name="size" class="form-control" ng-model="Uploads.LargePrice" placeholder="$ Large" />
+				</div>
+			</div>	 
+			<div class="row">
+				<div class="col-md-2 col-md-offset-8">
+					<button class="btn btn-default" ng-click="Uploads.Cancel()">Cancel</button>
+				</div>
+				<div class="col-md-2">
+					<button type="submit" class="btn btn-primary" ng-disabled="UploadsForm.$invalid">Create</button>
+				</div>
+			</div>  
+		</form>		
+	</div>
+</div>

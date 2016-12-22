@@ -1,0 +1,78 @@
+<div class="container">
+	<div class="row">
+		<div class="text-center"><h3>Add Inventory</h3></div>
+	</div><br />
+	<form name="AddProductForm">
+		<div class="row">
+			<div class="form-group col-md-4 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Product Type</label>
+	            <select class="form-control" ng-model="Product.Type" ng-options="p.Type for p in Product.Type"></select>
+			</div>
+			<div class="form-group col-md-4 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Brand</label>
+	            <select class="form-control" ng-model="Product.Brand" ng-options="p.Brand for p in Product.Brand"></select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Title</label>
+	            <input class="form-control" type="text" ng-model="Product.Title" />
+			</div>
+			<div class="form-group col-md-2 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Sku #</label>
+	            <input class="form-control" type="text" ng-model="Product.Sku" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-3 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Price</label>
+	            <input class="form-control" type="text" ng-model="Product.Price" />
+			</div>
+			<div class="form-group col-md-3" style="margin-bottom:20px">
+	            <label class="control-label">Cost</label>
+	            <input class="form-control" type="text" ng-model="Product.Cost" />
+			</div>
+			<div class="form-group col-md-3" style="margin-bottom:20px">
+	            <label class="control-label">Shipping</label>
+	            <input class="form-control" type="text" ng-model="Product.Shipping" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-3 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Height</label>
+	            <input class="form-control" type="text" ng-model="Product.Height" />
+			</div>
+			<div class="form-group col-md-3" style="margin-bottom:20px">
+	            <label class="control-label">Width</label>
+	            <input class="form-control" type="text" ng-model="Product.Width" />
+			</div>
+			<div class="form-group col-md-3" style="margin-bottom:20px">
+	            <label class="control-label">Depth</label>
+	            <input class="form-control" type="text" ng-model="Product.Depth" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-3 col-md-offset-1" style="margin-bottom:20px">
+	            <label class="control-label">Material</label>
+	            <input class="form-control" type="text" ng-model="Product.Material" />
+			</div>
+			<div class="form-group col-md-3" style="margin-bottom:20px">
+	            <label class="control-label">Color</label>
+	            <input class="form-control" type="text" ng-model="Product.Color" />
+			</div>
+			<div class="form-group col-md-3" style="margin-bottom:20px">
+	            <label class="control-label">Weight</label>
+	            <input class="form-control" type="text" ng-model="Product.Weight" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-1">
+				<label class="control-label">Description</label>
+				<textarea class="form-control" rows="3" ng-model="Product.Desc"></textarea>
+			</div>
+			<div class="col-md-2 col-md-offset-1">
+				<button type="button" class="btn btn-info add-prod-btn" ng-click="AddNewProduct()"><span class="glyphicon glyphicon-plus"></span>&nbsp;Add Product</button>
+			</div>
+		</div>
+	</form>	
+</div>

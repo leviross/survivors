@@ -1,0 +1,72 @@
+<div ng-controller="HeaderController as Header">  
+    <!-- navbar-->
+    <header class="header">
+      <div class="topbar">
+        <div class="container"> 
+          <div class="topbar__content row">
+            <div class="col-sm-3 col-sm-offset-1 hidden-xs">
+              <form class="topbar__search">
+                <div class="input-group"><span class="input-group-btn">
+                    <button type="button" class="btn"><i class="fa fa-search"></i></button></span>
+                  <input type="text" placeholder="SEARCH" class="form-control">
+                </div>
+              </form>
+            </div>
+            <!--<div class="col-sm-4 topbar__logo"><a href="/#/home"><img src="../images/logo.png" alt="" class="topbar__logo__normal"><img src="../images/logo-small.png" alt="" class="topbar__logo__small"></a></div>-->
+              <div class="col-sm-4 topbar__logo"><a href="/#/home"><h1 class="product__heading">Sefira Creative</h1></a></div>
+            <div class="col-sm-3 hidden-xs">
+              <div class="topbar__cart"><a href="/#/shopping-cart" class="btn btn-transparent" ng-click="Header.Highlight()"><i class="fa fa-shopping-cart"></i><span>{{Header.Cart}} Item(s) in cart</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="navigation" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".collapsed-search" class="navbar-toggle btn btn-transparent"><i class="fa fa-search"></i><span class="sr-only">Toggle navigation</span></button><a href="basket.html" class="navbar-toggle btn btn-transparent"><i class="fa fa-shopping-cart"></i><span class="hidden-xs">3 Items in cart</span></a>
+            <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggle btn btn-transparent"><i class="fa fa-align-justify"></i><span class="sr-only">Toggle navigation</span></button>
+          </div>
+          <div id="navigation" class="collapse navbar-collapse">
+            <ul id="navList" class="nav navbar-nav"><!-- ng-click="Header.ActiveClass($event)" -->
+              <li id="home" class="loopClass active"><a href="/#/home">Home</a></li>
+              <li id="shop" class="loopClass"><a href="" ng-click="Header.BackToSelected()">Shop</a></li>
+              <li id="shopping-cart" class="loopClass"><a href="/#/shopping-cart">Cart</a></li>
+              <li id="about" class="loopClass"><a href="text.html">About</a></li>
+              <!--<li class="loopClass dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Brands <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Decorex</a></li>
+                  <li><a href="category.html">Ashley</a></li>
+                  <li><a href="detail.html">Shesaya</a></li>
+                  <li><a href="basket.html">Fancy Brand</a></li>
+                  <li><a href="checkout1.html">Home Patterns</a></li>
+                  <li><a href="text.html">Coral Reef</a></li>
+                  <li><a href="contact.html">Hello</a></li>
+                </ul>
+              </li>-->
+              <li id="contact" class="loopClass"><a href="contact.html">Contact</a></li>
+              <li id="login" class="loopClass" ng-hide="Header.User"><a href="/#/login">Login</a></li>
+              <li id="register" class="loopClass" ng-hide="Header.User"><a href="/#/register">Register</a></li>
+              <li id="user" class="loopClass" ng-show="Header.User" class="dropdown"><a href="" data-toggle="dropdown" class="dropdown-toggle">{{Header.User.FirstName}} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">My Orders</a></li>
+                  <li><a href="">My Profile</a></li>
+                  <li ng-show="Header.User.IsAdmin"><a href="/#/admin">Admin</a></li>
+                  <li ng-click="Header.Logout()"><a href="">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="collapsed-search collapse">
+            <form>
+              <div class="input-group">
+                <input type="text" placeholder="SEARCH" class="form-control"><span class="input-group-btn">
+                  <button type="button" class="btn"><i class="fa fa-search"></i></button></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /.navbar-->
+</div>

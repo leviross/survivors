@@ -1,0 +1,21 @@
+<br />
+<br />
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+
+			<section class="tab">
+				<ul class="nav nav-pills">
+					<li ng-class="{ active: Admin.IsSelected(0) }"><a href ng-click="Admin.SelectTab(0)"><h5>Users</h5></a></li>
+					<li ng-class="{ active: Admin.IsSelected(1) }"><a href ng-click="Admin.SelectTab(1)"><h5>Categories</h5></a></li>
+					<li ng-class="{ active: Admin.IsSelected(2) }"><a href ng-click="Admin.SelectTab(2)"><h5>Products</h5></a></li>
+					<li ng-class="{ active: Admin.IsSelected(3) }"><a href ng-click="Admin.SelectTab(3)"><h5>Uploads</h5></a></li>
+					<li ng-class="{ active: Admin.IsSelected(4) }"><a href ng-click="Admin.SelectTab(4)"><h5>Orders</h5></a></li>
+				</ul>
+			</section>
+
+			<div ng-include="Admin.TabView"></div>
+
+		</div>	
+	</div>	
+</div>	

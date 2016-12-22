@@ -1,0 +1,39 @@
+﻿<div class="container">
+    <div class="col-sm-12">
+        
+        <div class="row page-top">
+            <h1>Microsoft Projects</h1>
+        </div>
+
+        <h3>Rebranding Project</h3>
+        <h5>Search &amp; replace old branding strings to new ones.</h5>
+        <ul class="codePage">
+            <li>Executable program that loops through 1,000's of Xml content files and replaces a list of old branding names with new ones.</li>
+            <li>I built the main search and replace module that would sort a list of old branding strings by longest word count and then use a regular expression to see if any text nodes matched any of the elements from that list.</li>
+            <li>I logged all results so that writers and editors could see what got replaced in their content areas.</li>
+            <li>We then checked all updated Xml files back into the new Caps CMS.</li>
+            <li>Built in .NET / C#.</li>
+        </ul>
+
+        <br />
+        <h3>Custom Reports App</h3>
+        <h5>Download custom reports on CMS Xml content - Front End</h5>
+        <ul class="codePage">
+            <li>Single page application with ASP.NET controls styled with Bootstrap.</li>
+            <li>User can choose report type from 4 different drop down menus.</li>
+            <li>On form submission, the C# code behind will kick off the correct method and gather data from the different SQL tables.</li>
+            <li>Data is written to an Excel file which is then sent back to the client as a downloaded file.</li>
+        </ul>
+
+        <h5>Back End</h5>
+        <ul class="codePage">
+            <li>An executable task runs every 2 hours on a VM that parses 1,000's of Xml content files from the Caps CMS.</li>
+            <li>As the program loops through all Xml child nodes, it tests internal, external, image and token links to see if they are broken or not.</li>
+            <li>Results are then written to multiple SQL tables.</li>
+            <li>Built in .NET / C#.</li>
+        </ul>
+        <br />
+
+
+    </div>
+</div>

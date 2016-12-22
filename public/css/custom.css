@@ -1,0 +1,38 @@
+/*.custom-validate.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.custom-validate.ng-valid.ng-dirty {
+	border-color: #78FA89;
+} */
+
+ul.codePage {
+    font-size: 20px;
+}
+
+.follow-me {
+    position: fixed; 
+    z-index: 1; 
+    height: 45px;
+    width: 150px;
+    box-shadow:10px 10px 5px #888888;
+}
+
+.messages {
+  font-size: 13px;
+  padding-top: 5px;
+  /*padding-bottom: 6px;*/
+  color: red;
+  margin-bottom: -25px;
+}
+
+section.tab {
+	padding-bottom: 0px;
+}
+
+h4.admin-h4 {
+	text-align: center;
+}
+
+div.padded-panel {
+	padding: 10px;
+}
