@@ -16,9 +16,65 @@
     
 </head>
 <body>
+    <div class="text-center">
+        <img src="images/banner.jpg" />
+    </div>
+    <br />
+    <div class="text-center">
+        <h1>Setup a Recurring Donation</h1>
+    </div>
+    <br />
+    <div class="text-center">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick-subscriptions">
+            <input type="hidden" name="business" value="83SX3NVBVXCZU">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="Donate to Our Organization">
+            <input type="hidden" name="no_note" value="1">
+            <input type="hidden" name="no_shipping" value="2">
+            <input type="hidden" name="src" value="1">
+            <input type="hidden" name="a3" value="1.00">
+            <input type="hidden" name="p3" value="1">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
+            <table class="table">
+                <tr><td>How many times would you like this to recur? (including this payment)</td></tr>
+                <tr>
+                    <td>
+                        <select name="srt">
+                            <option value="0">Never End</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td>When would you like this to Recur?</td></tr>
+                <tr>
+                    <td>
+                        <select name="t3">
+                            <option value="D">Daily </option>
+                            <option value="M">Monthly </option>
+                            <option value="Y">Yearly </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td>Enter your Donation Amount</td></tr>
+                <tr><td><input type="text" name="a3" maxlength="200"></td></tr>
+            </table>
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
 
-
-    
+    </div>
 
 
 </body>

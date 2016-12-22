@@ -4,8 +4,9 @@ node_modules
 .DS_Store
 .vs/
 bin/
-ecomm.njsproj
+survivors.njsproj
 npm-debug.log
 obj/
 typings/
-ecomm.sln
+survivors.sln
+npm-debug.log
