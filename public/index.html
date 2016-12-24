@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- we use cdn but you can also include local files located in css directory-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon -->
@@ -42,7 +43,7 @@
                 <tr><td>How many times would you like this to recur? (including this payment)</td></tr>
                 <tr>
                     <td>
-                        <select name="srt">
+                        <select class="form-control" name="srt">
                             <option value="0">Never End</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -73,7 +74,7 @@
                 <tr><td>When would you like this to Recur?</td></tr>
                 <tr>
                     <td>
-                        <select name="t3">
+                        <select class="form-control" name="t3">
                             <option value="D">Daily </option>
                             <option value="M">Monthly </option>
                             <option value="Y">Yearly </option>
@@ -81,7 +82,7 @@
                     </td>
                 </tr>
                 <tr><td>Enter your Donation Amount</td></tr>
-                <tr><td><input type="text" name="a3" maxlength="200"></td></tr>
+                <tr><td><input class="form-control" type="text" name="a3" maxlength="200" placeholder="$ Amount"></td></tr>
             </table>
             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
