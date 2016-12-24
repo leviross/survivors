@@ -22,8 +22,6 @@
     <Content Include="README.md" />
     <Compile Include="server.js" />
     <Content Include="public\index.html" />
-    <Content Include="public\login.html" />
-    <Compile Include="public\app.js" />
     <Compile Include="public\controllers\CartController.js" />
     <Compile Include="public\controllers\CheckoutController.js" />
     <Compile Include="public\controllers\DetailController.js" />
@@ -44,9 +42,6 @@
     <Content Include="public\css\owl.transitions.css" />
     <Content Include="public\css\style.default.css" />
     <Content Include="public\css\themify-icons.css" />
-    <Compile Include="public\directives\fileread.js" />
-    <Compile Include="public\directives\navSelect.js" />
-    <Compile Include="public\filters\withDashes.js" />
     <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="public\images\logo-small.png" />
     <Content Include="public\images\logo-white-small.png" />
@@ -110,8 +105,6 @@
     <Compile Include="public\scripts\simplegrid.js" />
     <Compile Include="public\scripts\underscore.min.js" />
     <Compile Include="public\scripts\ValidationModule.js" />
-    <Compile Include="public\services\CartService.js" />
-    <Compile Include="public\services\ProductService.js" />
     <Compile Include="public\services\SettingsService.js" />
     <Compile Include="public\services\UserService.js" />
     <Compile Include="public\services\ValidationService.js" />
@@ -127,8 +120,6 @@
     <Content Include="public\views\register.html" />
     <Content Include="public\views\reset-password.html" />
     <Content Include="public\views\shop.html" />
-    <Compile Include="public\controllers\admin\AdminController.js" />
-    <Compile Include="public\controllers\admin\CategoryController.js" />
     <Compile Include="public\controllers\admin\ProductController.js" />
     <Compile Include="public\controllers\admin\UploadsController.js" />
     <Compile Include="public\controllers\admin\UserController.js" />
@@ -156,29 +147,19 @@
     <Content Include="public\views\checkout\payment.html" />
     <Content Include="public\views\checkout\review.html" />
     <Content Include="public\views\modals\quick-view.html" />
-    <Content Include="public\views\admin\partials\categories.html" />
-    <Content Include="public\views\admin\partials\orders.html" />
     <Content Include="public\views\admin\partials\products.html" />
     <Content Include="public\views\admin\partials\uploads.html" />
     <Content Include="public\views\admin\partials\users.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public" />
-    <Folder Include="public\controllers" />
-    <Folder Include="public\controllers\admin" />
     <Folder Include="public\controllers\modals" />
     <Folder Include="public\css" />
     <Folder Include="public\css\fonts" />
-    <Folder Include="public\directives" />
-    <Folder Include="public\filters" />
     <Folder Include="public\fonts" />
     <Folder Include="public\images" />
     <Folder Include="public\images\images" />
     <Folder Include="public\scripts" />
-    <Folder Include="public\services" />
-    <Folder Include="public\views" />
-    <Folder Include="public\views\admin" />
-    <Folder Include="public\views\admin\partials" />
     <Folder Include="public\views\checkout" />
     <Folder Include="public\views\modals" />
     <Folder Include="typings\" />
